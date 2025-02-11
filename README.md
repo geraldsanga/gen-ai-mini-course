@@ -43,8 +43,13 @@ Navigate to the folder containing docker-compose.yaml (inside notebooks/) and ru
 docker compose up
 ```
 
-### 2. Create the pgvector Extension
-Once your container is running, initialize the extension with:
+### 2. Create the pgvector Extension and a database
+Once your container is running, initialize a database with:
+
+```bash
+docker exec -it postgres-pgvector psql -U postgres -c "CREATE DATABASE simplerag"
+```
+Create the pgvector extension with:
 ```bash
 docker exec -it postgres-pgvector psql -U postgres -c "CREATE EXTENSION vector"
 ```
