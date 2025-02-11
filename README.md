@@ -16,8 +16,8 @@ Follow these steps to get your environment up and running:
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/geraldsanga/gen-ai-mini-course.git
+cd gen-ai-mini-course
 ```
 
 
